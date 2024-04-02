@@ -1,0 +1,41 @@
+.projects{
+	display: flex;
+}
+
+.portfolio-section {
+	border: 1px solid #e2e8f0;
+	border-radius: 10px;
+	box-shadow: 0 0.375rem 1.5rem 0 rgba(140, 152, 164, 0.125);
+	margin-top: 30px;
+}
+
+.portfolio-section img {
+	width: 100%;
+}
+.portfolio-section h3 {
+	margin-top: 20px;
+}
+.portfolio-section span {
+	border: 1px solid lightgray;
+	padding: 5px 10px;
+	border-radius: 13px;
+    display: inline-flex;
+	/* float: left; */
+	margin:5px 5px 0px 0px;
+}
+.portfolio-info {
+	padding: 20px;
+	width: 100%;
+	float: left;
+    text-align: center;
+}
+
+.portfolio-info p{
+	text-align: justify;
+}
+
+@media only screen and (max-width:768px) {
+.portfolio-section h3 {
+ font-size: 16px;
+}
+}

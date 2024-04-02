@@ -1,0 +1,29 @@
+.about-me{
+    width: 100%;
+    padding: 25px 80px;
+
+}
+
+.about-me .heading h3{
+    font-size: xx-large;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    text-shadow: none;
+    overflow: hidden;
+}
+
+.about-me .heading{
+    text-align: center;
+    color: black;
+}
+
+.about-me .progress{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    margin: 30px;
+    height: 22px;
+    font-weight: 600;
+    text-align: left;
+}
+

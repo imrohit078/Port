@@ -1,0 +1,617 @@
+<html lang="en">
+
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio website</title>
+
+  <!--      **********  css  ************    -->
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <link rel="stylesheet" href="{% static 'css/about_me.css' %}">
+  <link rel="stylesheet" href="{% static 'css/foot.css' %}">
+  <link rel="stylesheet" href="{% static 'css/port.css' %}">
+  
+
+  <!--      **********  JS  ************    -->
+  <script src="/base.js"></script>
+
+
+
+  <!--      **********  Bootstrap  ************    -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  
+
+
+
+  <!--     ************* fonts ********************** -->
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+  <link rel="icon" href="static/images/favicon.png" type="logo.png">
+
+
+</head>
+
+
+<!--  ********************* header ************************    -->
+
+<div class="navbar">
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960"
+            width="26">
+            <path
+              d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+          </svg></a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <ul>
+      <!-- <li style="font-size: xxx-large;"> -->
+      <li>
+        <!-- <a href="#">ʀӄ</a> -->
+        <img src="static/images/favicon.png" alt="" height="45px" style="border-radius: 50%;" />
+      </li>
+      <li class="hideOnMobile"><a href="#">Home</a></li>
+      <li class="hideOnMobile"><a href="#">About Me</a></li>
+      <li class="hideOnMobile"><a href="#">Projects</a></li>
+      <li class="hideOnMobile"><a href="#">Contact</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+            viewBox="0 96 960 960" width="26">
+            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+          </svg></a></li>
+    </ul>
+  </nav>
+</div>
+
+<!--       ****************** Home section ********************   -->
+<div class="home-page">
+  <div class="cont">
+    <h1> Hello </h1>
+    <h2>I'm <span>Rohit Kumar</span></h2>
+    <h3><span class="typed-text"></span><span class="cursor">&nbsp;</span></h3>
+
+
+    <!-- <h3>I'm <span id="typedText" class="typed-cursor" aria-hidden="true"></span>!</h3> -->
+
+  </div>
+
+  <div class="scroll-button">
+    <!-- HTML !-->
+    <button class="button" role="button" onclick="scrollWin(0, 600)">Scroll Down</button>
+
+    <!-- <button type="submit" onclick="scrollWin(0, 40)"> Scroll Down</button> -->
+  </div>
+</div>
+
+<!--        ************** Boot Strap  *****************           -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+<script>
+  // var typed = new Typed(".auto-type", {
+  //   strings: ["Programmer", "Designer", "YouTuber"],
+  //   typeSpeed: 150,
+  //   backSpeed: 150,
+  //   looped: true
+  // })
+  // var typingEffect = new Typed(".typedText", {
+  //           strings: ["Analyst", "Developer", "Designer", "Video Editor"],
+  //           loop: true,
+  //           typeSpeed: 100,
+  //           backSpeed: 60,
+  //           backDelay: 1000
+  //       });
+
+        var type = new Typed(".typedText", {
+          strings : ["Analyst", "Developer", "Designer", "Video Editor"],
+          loop : true,
+          typeSpeed : 100,
+          backSpeed : 60,
+          backDelay: 1000
+
+        })
+
+
+  function scrollWin(x, y) {
+    window.scrollBy(x, y);
+  }
+</script>
+
+<!--                                  portfolio section                               -->
+
+<div class="about-me">
+  <div class="heading">
+    <h3>About Me</h3>
+  </div>
+  <div class="container-fluid">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repellat quisquam repellendus rerum laborum neque!
+      Quidem ducimus, modi quo harum rerum tempore pariatur amet incidunt officia neque magnam, velit saepe.</p>
+  </div>
+
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div class="lang left-side">
+          <header>
+            <h3> Languages</h3>
+          </header>
+          <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped" style="width: 85%">85%</div> HTML
+          </div>
+          <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="50"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped bg-success" style="width: 75%">75%</div>CSS
+          </div>
+          <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="75"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped bg-info" style="width: 60%">60%</div>Java Script
+          </div>
+          <div class="progress" role="progressbar" aria-label="Danger striped example" aria-valuenow="100"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped bg-danger" style="width: 70%">70%</div>Python
+          </div>
+        </div>
+      </div>
+      <div class="col order-5">
+        <div class="lang left-side">
+          <header>
+            <h3>Tools</h3>
+          </header>
+          <div class="progress" style="height: 25x;">
+            <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" >Vs code</div>
+            <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Photoshop</div>
+            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Git Hub</div>
+          </div>
+          <!-- <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10"
+          aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped" style="width: 80%">80%</div> Vs Code
+        </div>
+        <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="50"
+          aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped bg-success" style="width: 55%">55%</div>Photoshop
+        </div>
+        <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="75"
+          aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped bg-info" style="width: 60%">50%</div>Figma
+        </div>
+        <div class="progress" role="progressbar" aria-label="Danger striped example" aria-valuenow="100"
+          aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped bg-danger" style="width: 70%">70%</div>Github
+        </div> -->
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
+<!--                                  portfolio section                               -->
+
+<div class="projects">
+  <div class="container-fluid">
+    <div class="container">
+      <h2 style="margin: 25px; text-align: center; margin-bottom: -40px;"> Projects </h2>
+      <!-- <div class="heading" style=" text-align: center;">
+      </div> -->
+      <div class="row mt-5">
+        
+                <div class="col-lg-6 col-md-12 col-12">
+                  <div class="portfolio-section">
+                    <div class="row">
+                      <div class="col-md-12 col-12"> <img src="static/images/port.png" style="border-radius: 10px; height: 300px; ">
+                      </div>
+                      <div class="col-md-12 col-12 ">
+                        <div class="portfolio-info">
+                          <h3>Portfolio</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad impedit tempore repudiandae dolore id
+                            reprehenderit cupiditate minima a similique, quod, assumenda incidunt ipsa, enim aspernatur et
+                            dolores fuga ipsum corrupti.</p>
+                          <span>HTML</span>
+                          <span>CSS</span>
+                          <span>JavaScript</span>
+                          <span>Bootstrap</span>
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="portfolio-section">
+            <div class="row">
+              <div class="col-md-12 col-12"> <img src="static/images/farming.png"
+                  style="border-radius: 10px; height: 300px; "> </div>
+              <div class="col-md-12 col-12 ">
+                <div class="portfolio-info">
+                  <h3>Farming</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad impedit tempore repudiandae dolore
+                    id
+                    reprehenderit cupiditate minima a similique, quod, assumenda incidunt ipsa, enim aspernatur et
+                    dolores fuga ipsum corrupti.</p>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Django</span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="portfolio-section">
+            <div class="row">
+              <div class="col-md-12 col-12"> <img src="static/images/deengar.png"
+                  style="border-radius: 10px; height: 300px; "> </div>
+              <div class="col-md-12 col-12 ">
+                <div class="portfolio-info">
+                  <h3>Pahadi Deengar</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad impedit tempore repudiandae dolore
+                    id
+                    reprehenderit cupiditate minima a similique, quod, assumenda incidunt ipsa, enim aspernatur et
+                    dolores fuga ipsum corrupti.</p>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Django</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="portfolio-section">
+            <div class="row">
+              <div class="col-md-12 col-12"> <img src="static/images/foodie.png" style="border-radius: 10px; height: 300px; ">
+              </div>
+              <div class="col-md-12 col-12 ">
+                <div class="portfolio-info">
+                  <h3>Graphic Mockup</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad impedit tempore repudiandae dolore id
+                    reprehenderit cupiditate minima a similique, quod, assumenda incidunt ipsa, enim aspernatur et
+                    dolores fuga ipsum corrupti.</p>
+                  <span>Ui Design</span>
+                  <span>Figma</span>
+                  <span>Photoshop</span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="portfolio-section">
+            <div class="row">
+              <div class="col-md-12 col-12"> <img src="static/images/analyze.png"
+                  style="border-radius: 10px; height: 300px; "> </div>
+              <div class="col-md-12 col-12 ">
+                <div class="portfolio-info">
+                  <h3>Student Annual Report</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad impedit tempore repudiandae dolore
+                    id
+                    reprehenderit cupiditate minima a similique, quod, assumenda incidunt ipsa, enim aspernatur et
+                    dolores fuga ipsum corrupti.</p>
+                  <span>Data Analyst</span>
+                  <span>Power Bi</span>
+                  <!-- <span>Photoshop</span>
+                  <span>Web Designer</span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="portfolio-section">
+            <div class="row">
+              <div class="col-md-12 col-12"> <img src="static/images/e-com.png" style="border-radius: 10px; height: 300px; ">
+              </div>
+              <div class="col-md-12 col-12 ">
+                <div class="portfolio-info">
+                  <h3>E-Commerce Sales Analysis</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad impedit tempore repudiandae dolore
+                    id
+                    reprehenderit cupiditate minima a similique, quod, assumenda incidunt ipsa, enim aspernatur et
+                    dolores fuga ipsum corrupti.</p>
+                  <span>Data Analyst</span>
+                  <span>Power BI</span>
+                  <!-- <span>UX Design</span> -->
+                  <!-- <span>Web Designer</span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-lg-6 col-md-12 col-12">
+                <div class="portfolio-section">
+                  <div class="row">
+                    <div class="col-md-12 col-12"> <img src="/images/pic.png"> </div>
+                    <div class="col-md-12 col-12 ">
+                      <div class="portfolio-info">
+                        <h3>Graphic Mockup</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad impedit tempore repudiandae dolore id reprehenderit cupiditate minima a similique, quod, assumenda incidunt ipsa, enim aspernatur et dolores fuga ipsum corrupti.</p>
+                        <span>Ui Design</span> 
+                        <span>UX Design</span> 
+                        <span>Photoshop</span> 
+                        <span>Web Designer</span> 
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="col-lg-6 col-md-12 col-12">
+              <div class="portfolio-section">
+                <div class="row">
+                  <div class="col-md-12 col-12"> <img src="/images/pic.png"> </div>
+                  <div class="col-md-5 col-12">
+                    <div class="portfolio-info">
+                      <h3>Cartoon Graphics</h3>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <span>Ui Design</span> 
+                      <span>UX Design</span> 
+                      <span>Photoshop</span> 
+                      <span>Web Designer</span> 
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 mt-4">
+              <div class="portfolio-section">
+                <div class="row">
+                  <div class="col-md-7 col-12"> <img src="/images/pic.png"> </div>
+                  <div class="col-md-5 col-12">
+                    <div class="portfolio-info">
+                      <h3>Mombo Mockup</h3>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <span>Ui Design</span> 
+                      <span>Web Designer</span> 
+                      <span>UX Design</span> 
+                      <span>Photoshop</span> 
+                      <span>Java Developer</span> 
+                      <span>Frontend Developer</span> 
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 mt-4">
+              <div class="portfolio-section">
+                <div class="row">
+                  <div class="col-md-7 col-12"> <img src="/images/pic.png"> </div>
+                  <div class="col-md-5 col-12">
+                    <div class="portfolio-info">
+                      <h3>Cartoon Graphics</h3>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                      <span>Ui Design</span> 
+                      <span>UX Design</span> 
+                      <span>Photoshop</span> 
+                      <span>Web Designer</span> 
+                      <span>Frontend Developer</span> 
+                      <span>Mysql</span> 
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!--  *************************************    -->
+
+      <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom" style="text-align: center;">Services</h2>
+        <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg> -->
+            </div>
+            <h3 class="fs-2 text-body-emphasis text-center">Web Developer</h3>
+            <p style="text-align: justify;">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            <!-- <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a> -->
+          </div>
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg> -->
+            </div>
+            <h3 class="fs-2 text-body-emphasis text-center">Designer</h3>
+            <p style="text-align: justify;">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            <!-- <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a> -->
+          </div>
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg> -->
+            </div>
+            <h3 class="fs-2 text-body-emphasis text-center">Data Analyst</h3>
+            <p style="text-align: justify;">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            <!-- <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a> -->
+          </div>
+        </div>
+      </div>
+      <!--         ****************************** Contact me *********************************        -->
+
+
+      <div class="contact3 py-5">
+        <div class="row no-gutters">
+          <div class="container">
+            <h3 style="text-align: center;">~~ Get in touch ~~</h3><br/>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card-shadow" style="justify-content: center; border-radius: 7px;">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1774.1793400799706!2d76.29246997761756!3d31.569191781134005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1710501068439!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <!-- style="border:0;"
+                    allowfullscreen=""
+                    aria-hidden="false"
+                    tabindex="0">  -->
+                  </iframe>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="contact-box ml-3">
+                  <h3 class="font-weight-light mt-2" style="text-align: center;">Drop a message:-</h3>
+                  <form class="mt-4">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group mt-2">
+                          <input class="form-control" type="text" placeholder="Name">
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group mt-2">
+                          <input class="form-control" type="email" placeholder="Email@email.com">
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group mt-2">
+                          <input class="form-control" type="text" placeholder="Phone-number">
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group mt-2">
+                          <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 ">
+                        <button type="submit" class="btn btn-danger-gradiant mt-3 text-white border-0 px-3 py-2"><span>
+                            SUBMIT</span></button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <!--                     footer                                         -->
+
+      <footer class="footer-distributed">
+
+        <div class="footer-left">
+          <h3> <img src="static/images/favicon.png" alt="" style="width: 60px; border-radius: 50%;"></h3>
+
+          <!-- <h3 style="font-size: xx-large;">ʀӄ</h3> -->
+
+          <p class="footer-links">
+            <a href="#" class="link-1">Home</a>
+
+            <a href="#">About</a>
+
+            <a href="#">Project</a>
+
+            <a href="#">Contact</a>
+
+            <!-- <a href="#"></a>                  
+                  <a href="#">Contact</a> -->
+          </p>
+
+          <p class="footer-company-name">Designed By <span> <a href="https://www.linkedin.com/in/rohit-kumar-1757a7232/"
+                target="_blank">Rohit Kumar</a></span></p>
+        </div>
+
+        <div class="footer-center">
+
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p><img src="/icon/loc.png" alt="Address"><span>Vill Tiar PO Khurwain</span>Teh Bangana Distt Una</p>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 9459948067</p>
+          </div>
+
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">kkr3854@gmail.com</a></p>
+          </div>
+
+        </div>
+
+        <div class="footer-right">
+
+          <p class="footer-company-about">
+            <span style="text-align: center; font-size: large; color: black;">About Me:-</span>
+            Hey, I am Rohit Kumar, I am from Distt Una (Himachal Pradesh). I am designer and full stack web
+            developer.
+            I am intermediate in Photoshop and Vs code.
+          </p>
+
+          <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/rohit-kumar-1757a7232/" target="_blank"> <img src="/icon/in.png"
+                alt=""></a>
+            <a href="https://www.instagram.com/official_ro.h.it.078/" target="_blank"> <img src="/icon/insta.png"
+                alt=""></a>
+            <a href="https://www.facebook.com/officialrohit078/" target="_blank"> <img src="/icon/fb.png" alt=""></a>
+            <a href="https://twitter.com/im_rohit078" target="_blank"> <img src="/icon/x.png" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCFChvhbycxbkJvgWTm-I5TA" target="_blank"> <img src="/icon/yt.png"
+                alt=""></a>
+            <a href="https://wa.me/919459948067" target="_blank"> <img src="/icon/whtsp.png" alt=""></a>
+
+          </div>
+
+        </div>
+
+      </footer>
+
+
+      <script>
+        function showSidebar() {
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+      </script>
+
+      </body>
+
+</html>
